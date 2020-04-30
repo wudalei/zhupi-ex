@@ -1,0 +1,46 @@
+#login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width: 100%;
+}
+
+
+.login-box{
+  height: 400px;
+  width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  .login-box-left{
+    width: 400px;
+    overflow: hidden;
+    img{
+      height:400px;
+      object-fit: contain;
+    }
+  }
+  .login-box-right{
+    height:400px ;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    }
+    .ant-form-item-label > label{
+      font-size: 16px;
+    }
+    .ant-form-item{
+      width: 350px;
+    }
+    button{
+      width: 100%;
+    }
+  }
+}

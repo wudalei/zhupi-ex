@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-table-tbody>tr>td {
+  padding: 8px;
+}
+
+.paySubmit {
+  .ant-row {
+    .ant-form-item-label {
+      line-height: 1.1;
+    }
+  }
+
+  textarea {
+    max-width: 88%;
+  }
+}
+
+#initPAge {
+  .menuIcon {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+  }
+
+  .ant-layout {
+    .ant-layout-header {
+      height: 72px;
+      line-height: 72px;
+      background: #fff;
+      padding-left: 0;
+      padding-right: 40px;
+
+      .ant-menu-dark.ant-menu-horizontal>.ant-menu-item,
+      .ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu {
+        border-bottom: 3px solid #615f60;
+        background: none;
+        padding-left: 36px;
+        padding-right: 36px;
+
+        a {
+          color: #c5c4c5;
+          font-size: 20px;
+        }
+      }
+
+      .ant-menu.ant-menu-dark .ant-menu-item-selected,
+      .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+        border-bottom: 3px solid #a3875d;
+        background: none;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      .ant-menu {
+        background: #615f60;
+      }
+
+    }
+
+    .ant-layout-sider {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      .siderMenuLeft {
+        .ant-menu-item {
+          font-size: 16px;
+        }
+
+        .ant-menu-submenu {
+          .ant-menu-submenu-title {
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-layout-content {
+      .ant-table-tbody>tr>td {
+        padding: 8px !important;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+
+      .ant-table-body {
+        tr:nth-child(odd) {
+          background: #f9f9f9;
+        }
+      }
+
+      .ant-pagination {
+        float: right;
+      }
+    }
+
+  }
+
+  .manageLogo {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 64px;
+
+    img {
+      width: 80%;
+    }
+
+  }
+}
+
+.ant-table-wrapper {
+  width: 100%;
+}
