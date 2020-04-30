@@ -5,9 +5,19 @@ import tableData from './data'
 
 class ZPTable extends Component {
   render () {
+    //模拟数据
+    for (let i = 0; i < 100; i++) {
+      tableData.data.push({
+        key: i,
+        name: `Edrward ${i}`,
+        age: 32,
+        address: `London Park no. ${i}`,
+      });
+    }
+
     return (
-      <div className="chart-container">
-        <Table columns={tableData.columns} dataSource={tableData.data} />
+      <div className="table-container">
+        <Table columns={tableData.columns} dataSource={tableData.data} scroll={{ x: 1500 }} />
       </div>
     );
   }

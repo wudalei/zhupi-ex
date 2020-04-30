@@ -4,74 +4,71 @@ import { Tag } from 'antd';
 let tableData = {
   columns: [
     {
-      title: 'Name',
+      title: 'Full Name',
+      width: 100,
       dataIndex: 'name',
       key: 'name',
-      render: text => <a>{text}</a>,
+      fixed: 'left',
+      render: (name) => <a>{name}</a>,
     },
     {
       title: 'Age',
+      width: 100,
       dataIndex: 'age',
       key: 'age',
+      fixed: 'left',
     },
     {
-      title: 'Address',
+      title: 'Column 1',
       dataIndex: 'address',
-      key: 'address',
+      key: '1',
+      width: 150,
     },
     {
-      title: 'Tags',
-      key: 'tags',
-      dataIndex: 'tags',
-      render: tags => (
-        <span>
-          {tags.map(tag => {
-            let color = tag.length > 5 ? 'geekblue' : 'green';
-            if (tag === 'loser') {
-              color = 'volcano';
-            }
-            return (
-              <Tag color={color} key={tag}>
-                {tag.toUpperCase()}
-              </Tag>
-            );
-          })}
-        </span>
-      ),
+      title: 'Column 2',
+      dataIndex: 'address',
+      key: '2',
+      width: 150,
     },
+    {
+      title: 'Column 3',
+      dataIndex: 'address',
+      key: '3',
+      width: 150,
+    },
+    {
+      title: 'Column 4',
+      dataIndex: 'address',
+      key: '4',
+      width: 150,
+    },
+    {
+      title: 'Column 5',
+      dataIndex: 'address',
+      key: '5',
+      width: 150,
+    },
+    {
+      title: 'Column 6',
+      dataIndex: 'address',
+      key: '6',
+      width: 150,
+    },
+    {
+      title: 'Column 7',
+      dataIndex: 'address',
+      key: '7',
+      width: 150,
+    },
+    { title: 'Column 8', dataIndex: 'address', key: '8' },
     {
       title: 'Action',
-      key: 'action',
-      render: (text, record) => (
-        <span>
-          <a style={{ marginRight: 16 }}>Invite {record.name}</a>
-          <a>Delete</a>
-        </span>
-      ),
+      key: 'operation',
+      fixed: 'right',
+      width: 100,
+      render: () => <a>action</a>,
     },
   ],
-  data: [
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
-      tags: ['nice', 'developer'],
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-      tags: ['loser'],
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
-      tags: ['cool', 'teacher'],
-    },
-  ]
+  data: [],
 }
 export default tableData;
