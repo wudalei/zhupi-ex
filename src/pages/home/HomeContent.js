@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Tabs, Carousel, Layout, Icon, Breadcrumb } from 'antd'
+import { Tabs, Layout } from 'antd'
 
 const { Content, Footer } = Layout;
 const { TabPane } = Tabs
 
 class HomeContent extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   onChange = activeKey => {
     this.props.onChance({
       activeTag: activeKey
@@ -42,7 +38,7 @@ class HomeContent extends Component {
     const { tags, activeTag } = this.props
     console.log('tags-->', tags)
     return (
-      <div className='content-container'>
+      <Content className='content-container'>
         {tags.length ? (
           <div className="site-layout-background" style={{ minHeight: 460 }}>
             <Tabs
@@ -63,7 +59,7 @@ class HomeContent extends Component {
           </div>) : ''
         }
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
-      </div>
+      </Content>
     );
   }
 }

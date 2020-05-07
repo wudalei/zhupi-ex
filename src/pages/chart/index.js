@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import * as ReactDOM from 'react-dom';
-import { Statistic, Card, Button, notification } from 'antd';
+import { Statistic, notification } from 'antd';
 import Column from './eChart/Column'
 import {
   DesktopOutlined,
@@ -56,7 +55,7 @@ class ZPChart extends Component {
         <div className='card welcome'>
           <div>Hi,欢迎进入EX版本后台管理系统</div>
           <div>轻松管理您的数据，提高效率，降低成本，开启引导( ´･ω･)ﾉ(._.`)摸摸头( ´･ω･)ﾉ(._.`)摸摸头( ´･ω･)ﾉ(._.`)摸摸头</div>
-          <img src={require("../../assets/img/bg1.jpg")}></img>
+          <img src={require("../../assets/img/bg1.jpg")} alt=''></img>
         </div>
         <div className="left-box">
           {/* 数据统计 */}

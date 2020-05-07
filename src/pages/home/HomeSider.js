@@ -1,16 +1,10 @@
+import { menu, tabs } from '../../router/menuList'
 import React, { Component } from 'react';
 import { Menu, Layout } from 'antd';
+import Logo from '../../compenents/logo'
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-import {
-  DesktopOutlined,
-  PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
-import { menu, tabs } from '../../router/menuList'
 
 class HomeSider extends Component {
   constructor(props) {
@@ -32,7 +26,7 @@ class HomeSider extends Component {
     let add = true //如果不存在就添加一个标签
     if (tags.length > 0) {
       add = tags.every((item) => {
-        return activeTag != item.key
+        return activeTag !== item.key
       })
     }
     if (add) {
@@ -74,8 +68,10 @@ class HomeSider extends Component {
             </Menu.Item>))
     })
     return (
-      <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-        <div className="logo" />
+      <Sider className='sider-container' collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
+        <div className="logo">
+          <Logo />
+        </div>
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           {option}
         </Menu>

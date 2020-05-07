@@ -9,7 +9,6 @@ import AsyncComponent from './asyncComponent';
 //统一样式
 import '../style/mian.less';
 
-const App = AsyncComponent(() => import('../App'), 'app');
 const Login = AsyncComponent(() => import('../pages/login'), 'login');
 const Home = AsyncComponent(() => import('../pages/home'), 'home');
 // const Error = AsyncComponent(() => import('../pages/error'), 'error');

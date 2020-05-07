@@ -36,7 +36,7 @@ export default function asyncComponent (importComponent, page) {
     render () {
       const C = this.state.component;
       return C ? < C {...this.props} />
-        : (page == 'app' ?
+        : (page === 'app' ?
           <Spin tip="加载中...">
             <Content style={{
               margin: 0, minHeight: 400,

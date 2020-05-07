@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from './HomeHeader'
-import Content from './HomeContent'
-import Sider from './HomeSider'
+import HomeHeader from './HomeHeader'
+import HomeContent from './HomeContent'
+import HomeSider from './HomeSider'
 import './index.less';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 
 class Home extends Component {
   state = {
@@ -22,13 +22,13 @@ class Home extends Component {
   render () {
     const { collapsed, tags, activeTag } = this.state
     return (
-      <Layout className='home-container' style={{ minHeight: '100vh' }}>
-        <Sider collapsed={collapsed}
+      <Layout className='home-container'>
+        <HomeSider collapsed={collapsed}
           tags={tags}
-          onChance={this._setState}></Sider>
-        <Layout className="site-layout">
-          <Header></Header>
-          <Content tags={tags} activeTag={activeTag} onChance={this._setState}></Content>
+          onChance={this._setState}></HomeSider>
+        <Layout className="context-container">
+          <HomeHeader className='header-container'></HomeHeader>
+          <HomeContent tags={tags} activeTag={activeTag} onChance={this._setState}></HomeContent>
         </Layout>
       </Layout>
     );

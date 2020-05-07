@@ -3,8 +3,6 @@ import AsyncComponent from './asyncComponent';
 import {
   DesktopOutlined,
   PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 

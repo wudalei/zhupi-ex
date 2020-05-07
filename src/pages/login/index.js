@@ -42,7 +42,7 @@ class Login extends Component {
           <div id='login'>
             <div className='login-box'>
               <div className='login-box-left'>
-                <img src='https://www.ysdevelop.cn/project/web/img/login.ff1aa8bf.png'></img>
+                <img src='https://www.ysdevelop.cn/project/web/img/login.ff1aa8bf.png' alt='登录图片'></img>
               </div>
               <div className='login-box-right'>
                 <div className='title'>用户{this.state.isLogin ? '登录' : '注册'}</div>
